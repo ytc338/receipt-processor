@@ -3,8 +3,8 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 import uuid
-from models import Receipt
-from logic.points import calc_points
+from .models import Receipt
+from .logic.points import calc_points
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)

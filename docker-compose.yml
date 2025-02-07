@@ -6,4 +6,4 @@ services:
     volumes:
       - .:/app
       - /app/__pycache__/
-    command: uvicorn server:app --host 0.0.0.0 --reload
+    command: uvicorn app.server:app --host 0.0.0.0 --reload

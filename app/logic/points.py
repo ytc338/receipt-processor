@@ -1,5 +1,5 @@
 from decimal import Decimal, ROUND_CEILING
-from models import Receipt
+from app.models import Receipt
 
 def calc_points(receipt: Receipt):
     pts = 0
